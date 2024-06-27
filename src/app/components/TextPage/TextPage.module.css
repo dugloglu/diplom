@@ -1,0 +1,332 @@
+.section__text_page {
+  padding: 40px 20px 0 20px;
+  text-align: justify;
+}
+.container__about{
+  display: flex;
+  gap: 20px;
+}
+.container__about_text{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+
+}
+.contact__text{
+  font-size: 32px;
+}
+.contact{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin: 20px;
+}
+.contact__image{
+  width: 55px;
+  height: 55px;
+}
+.container__about_miss{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.container {
+  padding-bottom: 50px;
+}
+.about__logo{
+  font-size: 32px;
+}
+.about__text{
+  font-size: 28px;
+  text-indent: 40px;
+}
+.about__img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.h_big{
+  font-size: 40px;
+  padding-bottom: 50px;
+  text-align: left;
+}
+.advantages__li_big{
+  font-size: 36px;
+}
+.advantages__li_big img{
+  margin-bottom: 70px;
+}
+
+.img__li {
+  height: 45px;
+  width: 45px;
+  margin-bottom: 5px;
+}
+.img__li_ab{
+  height: 40px;
+  width: 40px;
+  margin-bottom: 15px;
+}
+
+.bankruptcy_li,
+.advantages__li, .advantages__li_big {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+  padding-left: 0;
+  margin-bottom: 15px;
+  text-indent: 20px;
+}
+
+.bankruptcy__img {
+  width: 533px;
+  height: 362px;
+}
+
+.home__h{
+  font-size: 38px;
+  padding-bottom: 50px;
+  text-align: left;
+}
+
+.advantages__li,
+.list__li,
+.bankruptcy_li {
+  
+  font-size: 32px;
+}
+
+.list__li {
+  list-style-type: disc;
+  margin-left: 50px;
+  padding: 0px;
+}
+
+.bankruptcy {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.bankruptcy__container_top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 0px 70px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 40px;
+}
+
+.bankruptcy__container {
+  display: flex;
+  gap: 190px;
+}
+
+.bankruptcy__text_logo {
+  font-size: 32px;
+  width: 533px;
+  height: 362px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.bankruptcy__text {
+  font-size: 28px;
+
+  text-indent: 25px;
+}
+.container__diplom {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-evenly;
+}
+.diplom {
+  max-width: 100%;
+  width: 350px;
+  height: auto; 
+  margin-right: 10px; 
+  margin-bottom: 10px; 
+}
+.advantages_ul {
+  list-style: none; 
+  padding: 0;
+}
+
+@media (max-width: 1200px) {
+  .section__text_page {
+    padding: 20px 20px 0 20px;
+  }
+  .bankruptcy__container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .home__h {
+    font-size: 32px;
+    padding-bottom: 25px;
+  }
+  .container, .h_big{
+    padding-bottom: 25px;
+  }
+  .bankruptcy__text_logo {
+    width: 100%;
+    height: auto;
+    font-size: 28px;
+  }
+
+  .bankruptcy__img {
+    width: 100%;
+    height: auto;
+  }
+  .container__about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container__about_text {
+    align-items: center;
+    text-align: center;
+  }
+
+  .about__img {
+    width: 80%;
+    height: auto;
+    margin: 20px 0;
+  }
+}
+@media (max-width: 768px) {
+  .home__h {
+    font-size: 32px;
+    padding-bottom: 20px;
+  }
+  .contact__text{
+    font-size: 26px;
+  }
+  .container, .h_big{
+    padding-bottom: 20px;
+  }
+  .h_big{font-size: 35px;}
+
+  .advantages__li_big{font-size: 28px;}
+
+  .advantages__li,
+  .list__li,
+  .bankruptcy_li {
+    font-size: 24px;
+  }
+  .list__li{
+    margin-left: 20px;
+  }
+  .bankruptcy__text_logo {
+    font-size: 24px;
+    padding: 10px;
+  }
+  .container__about_miss{
+    gap: 30px;
+  }
+  .about__text{
+    font-size: 24px;
+  }
+
+  .bankruptcy__text {
+    font-size: 20px;
+  }
+
+  .bankruptcy__container_top {
+    margin: 0 20px;
+    padding: 20px;
+  }
+
+  .bankruptcy__container {
+    gap: 20px;
+  }
+   .container__about_text {
+    width: 100%;
+  }
+
+  .about__img {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .about__logo{
+    font-size: 26px;
+  }
+  .section__text_page {
+    padding: 10px 20px 0 20px;
+  }
+  .about__text{
+    font-size: 22px;
+  }
+  .home__h {
+    font-size: 28px;
+    padding-bottom: 20px;
+  }
+  .img__li_ab{
+    height: 30px;
+    width: 30px;}
+  .img__li {
+    height: 35px;
+    width: 35px;
+  }
+  .h_big{
+    font-size: 30px;}
+
+  .advantages__li_big{font-size: 24px;
+  }
+
+  .advantages__li,
+  .list__li,
+  .bankruptcy_li {
+    font-size: 20px;
+  }
+
+  .bankruptcy__text_logo {
+    font-size: 20px;
+  }
+  .container__about_miss{
+    gap: 20px;
+  }
+  .contact__text{
+    font-size: 22px;
+  }
+  .bankruptcy__text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 480px) {
+  .home__h, .h {
+    font-size: 24px;
+    padding-bottom: 16px;
+  }
+  .about__text{
+    font-size: 20px;
+  }
+  .img__li {
+    height: 30px;
+    width: 30px;
+  }
+
+  .advantages__li,
+  .list__li,
+  .bankruptcy_li {
+    font-size: 18px;
+  }
+
+  .bankruptcy__text_logo {
+    font-size: 18px;
+  }
+
+  .bankruptcy__text {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,163 @@
+.feedback__form {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 70px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.h2__form{
+  font-size: 38px;
+  padding: 0px 30px 60px 30px ;
+  
+}
+.form__group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.label {
+  margin-bottom: 5px;
+  font-size: 28px;
+}
+
+.input,
+.textarea,
+.select {
+  width: 100%;
+  padding: 8px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.textarea {
+  resize: vertical;
+}
+
+.checkbox {
+  width: 28px;
+  height: 28px;
+  border: 1px solid rgba(27, 31, 59, 0.5);
+}
+
+.button {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 36px;
+  background-color: #005EC8;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.error {
+  margin-top: 5px;
+  color: #bf4040;
+  font-size: 18px;
+}
+
+.success {
+  color: #40bf40;
+  background-color: #e6ffe6;
+  border: 1px solid #40bf40  ;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.h1 {
+  font-size: 40px;
+  color: #1B1F3B;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  font-weight: lighter;
+}
+
+.group__checkbox {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.a {
+  color: #005EC8;
+  
+}
+.consent{
+  font-size: 18px;
+}
+
+@media (max-width: 950px) {
+
+  .feedback__form {
+    padding: 20px;
+    border: 0px;
+    border-radius: 0px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+  .input,
+  .textarea,
+  .select {
+    padding: 8px;
+    font-size: 16px;
+  }
+  .label {
+    font-size: 22px;
+  }
+  .h1 { 
+    font-size: 32px;
+  }
+  .button {
+    font-size: 24px;
+  }
+  
+}
+@media (max-width: 768px) {
+  .h2__form {
+    font-size: 32px;
+  }}
+  @media (max-width: 600px) {
+    .h2__form {
+      font-size: 28px;
+      padding-bottom: 20px;
+    }}
+@media (max-width: 530px) {
+  .label {
+    font-size: 20px;
+  }
+  .error {
+      font-size: 16px;
+    }
+  .button {
+    font-size: 20px;
+  }
+
+  .h1 {
+    font-size: 28px;
+  }
+  .consent{
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .h2__form {
+    font-size: 24px;
+    padding-bottom: 16px;
+  }}
+
+  

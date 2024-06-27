@@ -1,0 +1,168 @@
+.footer {
+    position: relative;
+    margin-top: 60px;
+}
+.hr{
+    border: 0px;
+    border-top: 1px solid #9AA2B1;
+}
+.section{
+    margin: 30px 30px;
+}
+.footer__section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.footer__logo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+}
+
+.logo__image {
+    height: 82px;
+    width: 150px;
+}
+
+.footer__form {
+    font-size: 24px;
+}
+
+.footer__form__text {
+    color: #005EC8;
+}
+
+.footer__contact {
+    text-align: left;
+}
+
+.footer__contact p {
+    font-size: 22px;
+
+}
+.footer__contact li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.contact__image {
+    height: 40px;
+}
+
+.contact__text {
+    font-size: 20px;
+}
+
+.footer__social {
+    display: flex;
+    gap: 20px;
+}
+
+.social__image {
+    max-height: 56px;
+    max-width: 56px;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 10px;
+    left: 60px;
+}
+
+.copyright__text {
+    font-size: 18px;
+    color: #1B1F3B;
+    opacity: 0.5;
+}
+@media (max-width: 1110px) {
+    .logo__image {
+        height: 64px;
+    }
+    .footer__form {
+        font-size: 22px;
+    }
+    .contact__image {
+        height: 35px;
+    }
+    .contact__text {
+        font-size: 18px;
+    }
+    .social__image {
+        max-height: 50px;
+    }
+    .copyright {
+        bottom: 10px;
+    }
+    .footer {
+        margin-top: 40px;
+    }
+
+}
+@media (max-width: 1010px) {
+    .footer__section {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .footer__logo,
+    .footer__form,
+    .footer__contact,
+    .footer__social {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer__logo {
+        justify-content: center;
+    }
+
+    .footer__form {
+        font-size: 20px;
+    }
+
+    .footer__contact p {
+        font-size: 18px;
+        text-align: start; 
+    }
+
+    .contact__text {
+        font-size: 16px;
+        text-align: left; 
+    }
+
+    .footer__social {
+        display: flex;
+        justify-content: center; 
+        gap: 20px; 
+    }
+
+    .social__image {
+        height: 40px;
+        width: auto; 
+    }
+
+    .copyright__text {
+        font-size: 14px;
+    }
+
+    .copyright {
+        position: static;
+        text-align: center; 
+        margin-top: 20px;
+    }
+}
+@media (max-width: 768px) {
+.logo__image {
+    height: 54px;
+}
+.footer {
+    margin-top: 20px;
+}
+}
+
