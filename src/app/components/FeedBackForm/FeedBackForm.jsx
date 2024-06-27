@@ -40,7 +40,7 @@ export default function FeedBackForm( ) {
   const handleSubmit = async (values, { resetForm }) => {
     setLoading(true);
     try {
-      await axios.post('http://localhost:3005/api/contact', values);
+      await axios.post('/api/contact', values);
       setSuccessMessage('Сообщение отправлено!');
       resetForm();
       setTimeout(() => setSuccessMessage(''), 3000);
