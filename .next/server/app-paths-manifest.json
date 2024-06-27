@@ -1,0 +1,13 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/about/page": "app/about/page.js",
+  "/area/page": "app/area/page.js",
+  "/family/page": "app/family/page.js",
+  "/bankruptcy/page": "app/bankruptcy/page.js",
+  "/consent/page": "app/consent/page.js",
+  "/work/page": "app/work/page.js",
+  "/heritage/page": "app/heritage/page.js",
+  "/page": "app/page.js",
+  "/house/page": "app/house/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js"
+}

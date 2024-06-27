@@ -1,0 +1,345 @@
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/components/AreaLinks/AreaLinks.module.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************/
+.AreaLinks_img__link__H_gAX {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 20px 0px; 
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/components/TextPage/TextPage.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************/
+.TextPage_section__text_page__BL8xk {
+  padding: 40px 20px 0 20px;
+  text-align: justify;
+}
+.TextPage_container__about__yJlV9{
+  display: flex;
+  gap: 20px;
+}
+.TextPage_container__about_text__diw9J{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+
+}
+.TextPage_contact__text__trQCq{
+  font-size: 32px;
+}
+.TextPage_contact__OgVOo{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin: 20px;
+}
+.TextPage_contact__image__gG_P_{
+  width: 55px;
+  height: 55px;
+}
+.TextPage_container__about_miss__9zokp{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.TextPage_container__Om6ME {
+  padding-bottom: 50px;
+}
+.TextPage_about__logo__DO2mx{
+  font-size: 32px;
+}
+.TextPage_about__text__Bs7Ah{
+  font-size: 28px;
+  text-indent: 40px;
+}
+.TextPage_about__img__DlulQ {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.TextPage_h_big__G9FY3{
+  font-size: 40px;
+  padding-bottom: 50px;
+  text-align: left;
+}
+.TextPage_advantages__li_big__vQu35{
+  font-size: 36px;
+}
+.TextPage_advantages__li_big__vQu35 img{
+  margin-bottom: 70px;
+}
+
+.TextPage_img__li__EfqSy {
+  height: 45px;
+  width: 45px;
+  margin-bottom: 5px;
+}
+.TextPage_img__li_ab__AutAr{
+  height: 40px;
+  width: 40px;
+  margin-bottom: 15px;
+}
+
+.TextPage_bankruptcy_li__8ua7v,
+.TextPage_advantages__li__Z_gA0, .TextPage_advantages__li_big__vQu35 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+  padding-left: 0;
+  margin-bottom: 15px;
+  text-indent: 20px;
+}
+
+.TextPage_bankruptcy__img__vn1uL {
+  width: 533px;
+  height: 362px;
+}
+
+.TextPage_home__h__aS3_2{
+  font-size: 38px;
+  padding-bottom: 50px;
+  text-align: left;
+}
+
+.TextPage_advantages__li__Z_gA0,
+.TextPage_list__li__V6OgR,
+.TextPage_bankruptcy_li__8ua7v {
+  
+  font-size: 32px;
+}
+
+.TextPage_list__li__V6OgR {
+  list-style-type: disc;
+  margin-left: 50px;
+  padding: 0px;
+}
+
+.TextPage_bankruptcy__7N3La {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.TextPage_bankruptcy__container_top__b5CFX {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 0px 70px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 40px;
+}
+
+.TextPage_bankruptcy__container__P4Cyg {
+  display: flex;
+  gap: 190px;
+}
+
+.TextPage_bankruptcy__text_logo__LziXA {
+  font-size: 32px;
+  width: 533px;
+  height: 362px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.TextPage_bankruptcy__text__X4FiI {
+  font-size: 28px;
+
+  text-indent: 25px;
+}
+.TextPage_container__diplom__bogrK {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-evenly;
+}
+.TextPage_diplom__rweqo {
+  max-width: 100%;
+  width: 350px;
+  height: auto; 
+  margin-right: 10px; 
+  margin-bottom: 10px; 
+}
+.TextPage_advantages_ul__68QhH {
+  list-style: none; 
+  padding: 0;
+}
+
+@media (max-width: 1200px) {
+  .TextPage_section__text_page__BL8xk {
+    padding: 20px 20px 0 20px;
+  }
+  .TextPage_bankruptcy__container__P4Cyg {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .TextPage_home__h__aS3_2 {
+    font-size: 32px;
+    padding-bottom: 25px;
+  }
+  .TextPage_container__Om6ME, .TextPage_h_big__G9FY3{
+    padding-bottom: 25px;
+  }
+  .TextPage_bankruptcy__text_logo__LziXA {
+    width: 100%;
+    height: auto;
+    font-size: 28px;
+  }
+
+  .TextPage_bankruptcy__img__vn1uL {
+    width: 100%;
+    height: auto;
+  }
+  .TextPage_container__about__yJlV9 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .TextPage_container__about_text__diw9J {
+    align-items: center;
+    text-align: center;
+  }
+
+  .TextPage_about__img__DlulQ {
+    width: 80%;
+    height: auto;
+    margin: 20px 0;
+  }
+}
+@media (max-width: 768px) {
+  .TextPage_home__h__aS3_2 {
+    font-size: 32px;
+    padding-bottom: 20px;
+  }
+  .TextPage_contact__text__trQCq{
+    font-size: 26px;
+  }
+  .TextPage_container__Om6ME, .TextPage_h_big__G9FY3{
+    padding-bottom: 20px;
+  }
+  .TextPage_h_big__G9FY3{font-size: 35px;}
+
+  .TextPage_advantages__li_big__vQu35{font-size: 28px;}
+
+  .TextPage_advantages__li__Z_gA0,
+  .TextPage_list__li__V6OgR,
+  .TextPage_bankruptcy_li__8ua7v {
+    font-size: 24px;
+  }
+  .TextPage_list__li__V6OgR{
+    margin-left: 20px;
+  }
+  .TextPage_bankruptcy__text_logo__LziXA {
+    font-size: 24px;
+    padding: 10px;
+  }
+  .TextPage_container__about_miss__9zokp{
+    gap: 30px;
+  }
+  .TextPage_about__text__Bs7Ah{
+    font-size: 24px;
+  }
+
+  .TextPage_bankruptcy__text__X4FiI {
+    font-size: 20px;
+  }
+
+  .TextPage_bankruptcy__container_top__b5CFX {
+    margin: 0 20px;
+    padding: 20px;
+  }
+
+  .TextPage_bankruptcy__container__P4Cyg {
+    gap: 20px;
+  }
+   .TextPage_container__about_text__diw9J {
+    width: 100%;
+  }
+
+  .TextPage_about__img__DlulQ {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .TextPage_about__logo__DO2mx{
+    font-size: 26px;
+  }
+  .TextPage_section__text_page__BL8xk {
+    padding: 10px 20px 0 20px;
+  }
+  .TextPage_about__text__Bs7Ah{
+    font-size: 22px;
+  }
+  .TextPage_home__h__aS3_2 {
+    font-size: 28px;
+    padding-bottom: 20px;
+  }
+  .TextPage_img__li_ab__AutAr{
+    height: 30px;
+    width: 30px;}
+  .TextPage_img__li__EfqSy {
+    height: 35px;
+    width: 35px;
+  }
+  .TextPage_h_big__G9FY3{
+    font-size: 30px;}
+
+  .TextPage_advantages__li_big__vQu35{font-size: 24px;
+  }
+
+  .TextPage_advantages__li__Z_gA0,
+  .TextPage_list__li__V6OgR,
+  .TextPage_bankruptcy_li__8ua7v {
+    font-size: 20px;
+  }
+
+  .TextPage_bankruptcy__text_logo__LziXA {
+    font-size: 20px;
+  }
+  .TextPage_container__about_miss__9zokp{
+    gap: 20px;
+  }
+  .TextPage_contact__text__trQCq{
+    font-size: 22px;
+  }
+  .TextPage_bankruptcy__text__X4FiI {
+    font-size: 18px;
+  }
+}
+@media (max-width: 480px) {
+  .TextPage_home__h__aS3_2, .TextPage_h__7_CJ4 {
+    font-size: 24px;
+    padding-bottom: 16px;
+  }
+  .TextPage_about__text__Bs7Ah{
+    font-size: 20px;
+  }
+  .TextPage_img__li__EfqSy {
+    height: 30px;
+    width: 30px;
+  }
+
+  .TextPage_advantages__li__Z_gA0,
+  .TextPage_list__li__V6OgR,
+  .TextPage_bankruptcy_li__8ua7v {
+    font-size: 18px;
+  }
+
+  .TextPage_bankruptcy__text_logo__LziXA {
+    font-size: 18px;
+  }
+
+  .TextPage_bankruptcy__text__X4FiI {
+    font-size: 18px;
+  }
+}
+
