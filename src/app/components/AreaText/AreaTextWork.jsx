@@ -1,9 +1,10 @@
 import Styles from './AreaText.module.css';
-
+import { Button } from "../Button/Button";
 export const AreaTextWork = () => {
     return(
         <section className={Styles['section__area']}>
         <img className={Styles['img__link']} src="/images/work.jpg" alt="Трудовое право" />
+        <img className={Styles['img__link_min']} src="/images/work_min.jpg" alt="Трудовое право" />
         <div className={Styles['container']}>
         <p className={Styles['area__logo']}>
         Если у вас возникли проблемы или вопросы, связанные с трудовыми отношениями, наши специалисты по трудовому праву готовы помочь. <br />
@@ -28,6 +29,9 @@ export const AreaTextWork = () => {
         </div>
         <div className={Styles['container']}>
             <p className={Styles['area__bottom']}>Не оставляйте свои трудовые споры без внимания. Обратитесь к нам для получения квалифицированной юридической помощи и защиты ваших трудовых прав.</p>
+        </div>
+        <div className={Styles['container']}>
+        <Button/>
         </div>
         </section>
     );

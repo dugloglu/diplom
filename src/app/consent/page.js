@@ -1,10 +1,9 @@
-"use client"
 import Link from "next/link";
 
   export default async function ConsentPage() {
   return (
     <div>      <Link href="/">
-        <h1>Вернуться</h1>
+        <h1 style={{ textAlign: 'center', color: 'blue' }}>Вернуться</h1>
       </Link>
       <h2>Согласие на обработку персональных данных</h2>
       <p>

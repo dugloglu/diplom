@@ -8,7 +8,7 @@ import Styles from './FeedBackForm.module.css';
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export default function FeedBackForm( ) {
+export default function FeedBackForm() {
   const [loading, setLoading] = useState(false);
   const [successMessage, setSuccessMessage] = useState('');
   const pathname = usePathname();
@@ -19,7 +19,6 @@ export default function FeedBackForm( ) {
     area: '',
     consent: false,
   };
-
 
   const validationSchema = Yup.object().shape({
     name: Yup.string()
@@ -40,7 +39,8 @@ export default function FeedBackForm( ) {
   const handleSubmit = async (values, { resetForm }) => {
     setLoading(true);
     try {
-      await axios.post('/api/contact', values);
+      const response = await axios.post('http://localhost:3005/api/contact', values);
+      console.log(response.data); // Проверяем ответ от сервера
       setSuccessMessage('Сообщение отправлено!');
       resetForm();
       setTimeout(() => setSuccessMessage(''), 3000);
@@ -62,7 +62,7 @@ export default function FeedBackForm( ) {
           onSubmit={handleSubmit}
         >
           {({ errors, touched }) => (
-            <Form >
+            <Form>
               {successMessage && <p className={Styles['success']}>{successMessage}</p>}
               <div className={Styles['form__group']}>
                 <label htmlFor="name" className={Styles['label']}>Ваше имя</label>
@@ -91,59 +91,60 @@ export default function FeedBackForm( ) {
               <div className={Styles['form__group']}>
                 <label htmlFor="question" className={Styles['label']}>Ваш вопрос</label>
                 <Field as="textarea"
-                   id="question"
-                   name="question"
-                   className={`${Styles['textarea']} ${errors.question && touched.question ? Styles['error__textarea'] : ''}`}
-                 />
-                 {errors.question && touched.question && <p className={Styles['error']}>{errors.question}</p>}
-               </div>
-               <div className={Styles['form__group']}>
-                 <label htmlFor="area" className={Styles['label']}>Область обращения:</label>
-                 <Field
-                   as="select"
-                   id="area"
-                   name="area"
-                   className={`${Styles['select']} ${errors.area && touched.area ? Styles['error__select'] : ''}`}
-                 >
-                   <option value="">Выберите область</option>
-                   <option value="Банкротство физических лиц">Банкротство физических лиц</option>
-                   <option value="Жилищное право">Жилищное право</option>
-                   <option value="Наследственное право">Наследственное право</option>
-                   <option value="Трудовое право">Трудовое право</option>
-                   <option value="Семейное право">Семейное право</option>
-                   <option value="Другое">Другое</option>
-                 </Field>
-                 {errors.area && touched.area && <p className={Styles['error']}>{errors.area}</p>}
-               </div>
-               <div className={`${Styles['form__group']} ${Styles['consent__group']}`}>
-                 <div className={Styles['group__checkbox']}>
-                   <Field
-                     type="checkbox"
-                     id="consent"
-                     name="consent"
-                     className={Styles['checkbox']}
-                   />
-                   <label htmlFor="consent" className={Styles['consent']}>
-                     Нажимая кнопку «Отправить», я даю свое согласие на{' '}
-                     <Link href="/consent" passHref>
-                  <p className={Styles['a']}>
-                    обработку моих персональных данных.
-                  </p>
-                </Link>
-                   </label>
-                 </div>
-                 {errors.consent && touched.consent && <p className={Styles['error']}>{errors.consent}</p>}
-               </div>
-               <button type="submit" disabled={loading} className={Styles['button']}>
-                 {loading ? 'Отправка...' : 'Отправить'}
-               </button>
-             </Form>
-           )}
-         </Formik>
-       </div>
-     </section>
-   );
- }
+                       id="question"
+                       name="question"
+                       className={`${Styles['textarea']} ${errors.question && touched.question ? Styles['error__textarea'] : ''}`}
+                />
+                {errors.question && touched.question && <p className={Styles['error']}>{errors.question}</p>}
+              </div>
+              <div className={Styles['form__group']}>
+                <label htmlFor="area" className={Styles['label']}>Область обращения:</label>
+                <Field
+                  as="select"
+                  id="area"
+                  name="area"
+                  className={`${Styles['select']} ${errors.area && touched.area ? Styles['error__select'] : ''}`}
+                >
+                  <option value="">Выберите область</option>
+                  <option value="Банкротство физических лиц">Банкротство физических лиц</option>
+                  <option value="Жилищное право">Жилищное право</option>
+                  <option value="Наследственное право">Наследственное право</option>
+                  <option value="Трудовое право">Трудовое право</option>
+                  <option value="Семейное право">Семейное право</option>
+                  <option value="Другое">Другое</option>
+                </Field>
+                {errors.area && touched.area && <p className={Styles['error']}>{errors.area}</p>}
+              </div>
+              <div className={`${Styles['form__group']} ${Styles['consent__group']}`}>
+                <div className={Styles['group__checkbox']}>
+                  <Field
+                    type="checkbox"
+                    id="consent"
+                    name="consent"
+                    className={Styles['checkbox']}
+                  />
+                  <label htmlFor="consent" className={Styles['consent']}>
+                    Нажимая кнопку «Отправить», я даю свое согласие на{' '}
+                    <Link href="/consent" passHref>
+                      <p className={Styles['a']}>
+                        обработку моих персональных данных.
+                      </p>
+                    </Link>
+                  </label>
+                </div>
+                {errors.consent && touched.consent && <p className={Styles['error']}>{errors.consent}</p>}
+              </div>
+              <button type="submit" disabled={loading} className={Styles['button']}>
+                {loading ? 'Отправка...' : 'Отправить'}
+              </button>
+            </Form>
+          )}
+        </Formik>
+      </div>
+    </section>
+  );
+}
+
 
 
 

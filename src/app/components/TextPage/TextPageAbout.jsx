@@ -1,17 +1,8 @@
 "use client";
 import Styles from './TextPage.module.css';
 import { Map } from "../Map/Map"
-import { useState } from 'react';
-import { Toast } from '../Toast/Toast';
 
 export const TextPageAbout = () => {
-    const [toastVisible, setToastVisible] = useState(false);
-
-    const copyToClipboard = (text) => {
-      navigator.clipboard.writeText(text);
-      setToastVisible(true);
-      setTimeout(() => setToastVisible(false), 3000);
-    };
    return(
     <section className={Styles['section__text_page']}>
 
@@ -52,11 +43,11 @@ export const TextPageAbout = () => {
         <ul>
                         <li className={Styles['contact']}>
                             <img className={Styles['contact__image']} src="/images/phon.svg" alt="Телефон" />
-                            <p onClick={() => copyToClipboard('+7(995) 318-60-52')} className={Styles['contact__text']}>+7(995) 318-60-52</p>
+                            <a href="tel:89953186052"  className={Styles['contact__text']}>+7(995) 318-60-52</a>
                         </li>
                         <li className={Styles['contact']}>
                             <img className={Styles['contact__image']} src="/images/phon.svg" alt="Телефон" />
-                            <p onClick={() => copyToClipboard('+7(961) 305-05-36')} className={Styles['contact__text']}>+7(961) 305-05-36</p>
+                            <a href="tel:89613050536"  className={Styles['contact__text']}>+7(961) 305-05-36</a>
                         </li>
                         <li className={Styles['contact']}>
                             <img className={Styles['contact__image']} src="/images/map.svg" alt="Адрес" />
@@ -73,7 +64,6 @@ export const TextPageAbout = () => {
     <div className={Styles['container']}>
             <Map/>
       </div>
-      <Toast message="Номер телефона скопирован в буфер обмена" visible={toastVisible} />
     </section>
    )
 }

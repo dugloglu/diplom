@@ -1,5 +1,24 @@
 .banner {
+    display: flex;
+    justify-content: space-around;
+}
+
+.banner_img {
     width: 100%;
     height: auto;
-    object-fit: cover; 
+}
+
+.banner_img_mobile {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 700px) {
+    .banner_img {
+        display: none;
+    }
+    .banner_img_mobile {
+        display: block;
+    }
 }

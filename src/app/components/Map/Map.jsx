@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useRef } from 'react';
-
+import Styles from './Map.module.css';
 
 export const Map = () => {
   const mapContainer = useRef(null);
@@ -24,7 +24,7 @@ export const Map = () => {
   }, []);
 
   return (
-    <div ref={mapContainer} style={{ width: '100%', height: '518px', border: '1px solid #ccc' }}>
+    <div ref={mapContainer} className={Styles['map']}>
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import Styles from './TextPage.module.css';
+import { Button } from "../Button/Button";
 
 export const TextPageHome = () => {
    return(
@@ -29,6 +30,7 @@ export const TextPageHome = () => {
 Завершение процедуры банкротства полностью освободит вас от долгов.<br /><br />
 
 Узнайте больше у нас на консультации.</p>
+            <Button/>
                 </div>
             </div>
         </div>

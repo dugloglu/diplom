@@ -1,9 +1,10 @@
 import Styles from './AreaText.module.css';
-
+import { Button } from "../Button/Button";
 export const AreaTextBankruptcy = () => {
     return(
         <section className={Styles['section__area']}>
         <img className={Styles['img__link']} src="/images/bankruptcy.jpg" alt="Банкротство" />
+        <img className={Styles['img__link_min']} src="/images/bankruptcy_min.jpg" alt="Банкротство" />
         <div className={Styles['container']}>
         <p className={Styles['area__logo']}>
         Если вы оказались в сложной финансовой ситуации и не можете погасить свои долги, процедура банкротства физических лиц может стать для вас оптимальным решением. <br />
@@ -29,6 +30,9 @@ export const AreaTextBankruptcy = () => {
         </div>
         <div className={Styles['container']}>
             <p className={Styles['area__bottom']}>Не откладывайте решение своих финансовых проблем. Обратитесь к нам за консультацией, и мы поможем вам вернуть финансовую стабильность и спокойствие.</p>
+        </div>
+        <div className={Styles['container']}>
+        <Button/>
         </div>
         </section>
     );

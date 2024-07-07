@@ -1,9 +1,10 @@
 import Styles from './AreaText.module.css';
-
+import { Button } from "../Button/Button";
 export const AreaTextFamily = () => {
     return(
         <section className={Styles['section__area']}>
         <img className={Styles['img__link']} src="/images/family.jpg" alt="Семейное право" />
+        <img className={Styles['img__link_min']} src="/images/family_min.jpg" alt="Семейное право" />
         <div className={Styles['container']}>
         <p className={Styles['area__logo']}>
         Если у вас возникли семейные споры или вопросы, связанные с семейным правом, наши юристы готовы предоставить вам квалифицированную помощь. <br />
@@ -29,6 +30,9 @@ export const AreaTextFamily = () => {
         </div>
         <div className={Styles['container']}>
             <p className={Styles['area__bottom']}>Не откладывайте решение важных семейных вопросов. Обратитесь к нам за консультацией, и мы поможем вам найти оптимальное решение для вашей семьи.</p>
+        </div>
+        <div className={Styles['container']}>
+        <Button/>
         </div>
         </section>
     );

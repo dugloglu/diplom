@@ -53,9 +53,6 @@
 .advantages__li_big{
   font-size: 36px;
 }
-.advantages__li_big img{
-  margin-bottom: 70px;
-}
 
 .img__li {
   height: 45px;
@@ -77,6 +74,9 @@
   padding-left: 0;
   margin-bottom: 15px;
   text-indent: 20px;
+}
+.advantages__li_big, .advantages__li{
+  align-items: flex-start;
 }
 
 .bankruptcy__img {
@@ -159,6 +159,17 @@
   padding: 0;
 }
 
+@media (max-width: 1480px) {
+  .bankruptcy__container{
+    gap: 0px;
+  }
+}
+@media (max-width: 1260px) {
+  .bankruptcy__img, .bankruptcy__text_logo{
+    width: 503px;
+  }
+}
+
 @media (max-width: 1200px) {
   .section__text_page {
     padding: 20px 20px 0 20px;
@@ -203,11 +214,11 @@
 }
 @media (max-width: 768px) {
   .home__h {
-    font-size: 32px;
+    font-size: 28px;
     padding-bottom: 20px;
   }
   .contact__text{
-    font-size: 26px;
+    font-size: 23px;
   }
   .container, .h_big{
     padding-bottom: 20px;
@@ -254,10 +265,24 @@
   .about__img {
     width: 100%;
   }
+  .contact__image{
+    width: 40px;
+    height: 40px;
+  }
+  .contact{
+    gap: 20px;
+  }
 
 }
 
 @media (max-width: 600px) {
+  .bankruptcy_li,
+.advantages__li, .advantages__li_big {
+  text-indent: 10px;
+}
+.bankruptcy__text {
+  text-indent: 20px;
+}
   .about__logo{
     font-size: 26px;
   }
@@ -266,9 +291,10 @@
   }
   .about__text{
     font-size: 22px;
+    text-indent: 35px;
   }
   .home__h {
-    font-size: 28px;
+    font-size: 24px;
     padding-bottom: 20px;
   }
   .img__li_ab{
@@ -297,29 +323,46 @@
     gap: 20px;
   }
   .contact__text{
-    font-size: 22px;
+    font-size: 20px;
   }
   .bankruptcy__text {
     font-size: 18px;
   }
 }
+@media (max-width: 556px) {
+  .img__li{
+    margin-bottom: 20px;
+  }
+  .h_big{font-size: 28px;}
+}
 @media (max-width: 480px) {
   .home__h, .h {
-    font-size: 24px;
+    font-size: 22px;
     padding-bottom: 16px;
   }
   .about__text{
     font-size: 20px;
+    text-indent: 25px;
   }
   .img__li {
-    height: 30px;
-    width: 30px;
+    height: 28px;
+    width: 28px;
   }
-
+  .contact__image{
+    width: 32px;
+    height: 32px;
+  }
+  .contact{
+    gap: 15px;
+    margin: 8px;
+  }
   .advantages__li,
   .list__li,
   .bankruptcy_li {
     font-size: 18px;
+  }
+  .contact__text{
+    font-size: 16px;
   }
 
   .bankruptcy__text_logo {

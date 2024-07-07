@@ -1,9 +1,10 @@
 import Styles from './AreaText.module.css';
-
+import { Button } from "../Button/Button";
 export const AreaTextHouse = () => {
     return(
         <section className={Styles['section__area']}>
         <img className={Styles['img__link']} src="/images/house.jpg" alt="Жилищное право" />
+        <img className={Styles['img__link_min']} src="/images/house_min.jpg" alt="Жилищное право" />
         <div className={Styles['container']}>
         <p className={Styles['area__logo']}>
         Если у вас возникли вопросы или проблемы, связанные с жилищным правом, наши специалисты готовы предоставить квалифицированную помощь. <br />
@@ -28,6 +29,9 @@ export const AreaTextHouse = () => {
         </div>
         <div className={Styles['container']}>
             <p className={Styles['area__bottom']}>Не откладывайте решение своих жилищных вопросов. Обратитесь к нам за консультацией, и мы поможем вам защитить свои права и интересы.</p>
+        </div>
+        <div className={Styles['container']}>
+        <Button/>
         </div>
         </section>
     );

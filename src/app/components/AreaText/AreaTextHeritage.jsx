@@ -1,9 +1,10 @@
 import Styles from './AreaText.module.css';
-
+import { Button } from "../Button/Button";
 export const AreaTextHeritage = () => {
     return(
         <section className={Styles['section__area']}>
         <img className={Styles['img__link']} src="/images/heritage.jpg" alt="Наследственное право" />
+        <img className={Styles['img__link_min']} src="/images/heritage_min.jpg" alt="Наследственное право" />
         <div className={Styles['container']}>
         <p className={Styles['area__logo']}>
         Наследственное право — одна из самых сложных и деликатных областей права. Наши специалисты готовы предоставить вам квалифицированную помощь в решении всех вопросов, связанных с наследством. <br />
@@ -31,6 +32,9 @@ export const AreaTextHeritage = () => {
         </div>
         <div className={Styles['container']}>
             <p className={Styles['area__bottom']}>Не откладывайте решение своих наследственных вопросов. Обратитесь к нам за консультацией, и мы поможем вам защитить свои права и интересы.</p>
+        </div>
+        <div className={Styles['container']}>
+        <Button/>
         </div>
         </section>
     );

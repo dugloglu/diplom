@@ -1,5 +1,5 @@
 import express from 'express';
-import cors from 'cors'; 
+import cors from 'cors';
 import { Resend } from 'resend';
 
 const app = express();
@@ -7,6 +7,7 @@ const resend = new Resend('re_TYoDpPsa_JguvmsbTqfTFgQqM3at6D5PJ');
 
 app.use(express.json());
 app.use(cors());
+
 app.post('/api/contact', async (req, res) => {
   const { name, phone, question, area } = req.body;
 
@@ -17,14 +18,14 @@ app.post('/api/contact', async (req, res) => {
   try {
     const { data, error } = await resend.emails.send({
       from: 'Обратная форма связи <onboarding@resend.dev>',
-      to: ['IVANTSOV_IVANTSOVA@mail.ru'],
+      to: ['trrrrriger@gmail.com'],
       subject: `Новое сообщение от ${name}`,
       html: `
-      <p><strong>Область консультации:</strong> ${area}</p>
-      <p><strong>Вопрос:</strong> ${question}</p>
-      <p><strong>Имя:</strong> ${name}</p>
-      <p><strong>Телефон:</strong> ${phone}</p>
-    `,
+        <p><strong>Область консультации:</strong> ${area}</p>
+        <p><strong>Вопрос:</strong> ${question}</p>
+        <p><strong>Имя:</strong> ${name}</p>
+        <p><strong>Телефон:</strong> ${phone}</p>
+      `,
     });
 
     if (error) {
@@ -42,6 +43,8 @@ const port = process.env.PORT || 3005;
 app.listen(port, () => {
   console.log(`Listening on http://localhost:${port}`);
 });
+
+
 
 
 

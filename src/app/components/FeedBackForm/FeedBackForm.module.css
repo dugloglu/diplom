@@ -101,6 +101,11 @@
   font-size: 18px;
 }
 
+
+@media (max-width: 1200px) {
+  .h2__form {
+    font-size: 32px;
+  }}
 @media (max-width: 950px) {
 
   .feedback__form {
@@ -129,11 +134,11 @@
 }
 @media (max-width: 768px) {
   .h2__form {
-    font-size: 32px;
+    font-size: 28px;
   }}
   @media (max-width: 600px) {
     .h2__form {
-      font-size: 28px;
+      font-size: 24px;
       padding-bottom: 20px;
     }}
 @media (max-width: 530px) {
@@ -156,7 +161,7 @@
 }
 @media (max-width: 480px) {
   .h2__form {
-    font-size: 24px;
+    font-size: 22px;
     padding-bottom: 16px;
   }}
 

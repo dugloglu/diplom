@@ -1,19 +1,10 @@
 "use client";
-import { useState } from 'react';
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Styles from './Header.module.css';
-import { Toast } from '../Toast/Toast';
 
 export const Header = () => {
   const pathname = usePathname();
-  const [toastVisible, setToastVisible] = useState(false);
-
-  const copyToClipboard = (text) => {
-    navigator.clipboard.writeText(text);
-    setToastVisible(true);
-    setTimeout(() => setToastVisible(false), 3000);
-  };
     return (
         <header className={Styles['header']}>
             <nav className={Styles['nav']}>
@@ -45,16 +36,15 @@ export const Header = () => {
             </div>
             <div className={Styles['contact']}>
             <div className={Styles['contact__wrapper']}> 
-            <p onClick={() => copyToClipboard('+7(995) 318-60-52')} className={Styles['contact__phone']}>+7(995) 318-60-52</p>
+            <a href="tel:89953186052"  className={Styles['contact__phone']}>+7(995) 318-60-52</a>
             <img className={Styles['contact__image']} src="/images/phon.svg" alt="Телефон" />
             </div>
             <div className={Styles['contact__wrapper']}>
-            <p onClick={() => copyToClipboard('+7(961) 305-05-36')} className={Styles['contact__phone']}>+7(961) 305-05-36</p>
+            <a href="tel:89613050536"  className={Styles['contact__phone']}>+7(961) 305-05-36</a>
             <img className={Styles['contact__image']} src="/images/phon.svg" alt="Телефон" />
             </div>
             </div>
             </div>
-            <Toast message="Номер телефона скопирован в буфер обмена" visible={toastVisible} />
         </header>
     );
 };
